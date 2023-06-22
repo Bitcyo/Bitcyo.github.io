@@ -177,7 +177,7 @@ if (window.innerWidth < 768) {
 function verificarPosicionScroll() {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollPosition >= seccion1OffsetTop && scrollPosition < seccion2OffsetTop) {
+  if (scrollPosition <= seccion1OffsetTop && scrollPosition < seccion2OffsetTop) {
     cambiarImagen('multimedia/sobreMi.png');
   } else if (scrollPosition >= seccion2OffsetTop && scrollPosition < seccion3OffsetTop) {
     cambiarImagen('multimedia/skill.png');
