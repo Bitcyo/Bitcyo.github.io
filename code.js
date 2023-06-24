@@ -168,7 +168,7 @@ function cambiarImagen(src) {
 if (window.innerWidth < 768) {
   console.error('Función no apta para móviles');
 } else {
-  cambiarImagen('imagen.jpg');
+  console.error("mobile version")
 }
 
 
@@ -177,10 +177,10 @@ if (window.innerWidth < 768) {
 function verificarPosicionScroll() {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollPosition <= seccion1OffsetTop && scrollPosition < seccion2OffsetTop) {
-    cambiarImagen('multimedia/sobreMi.png');
+  if (scrollPosition >= seccion1OffsetTop && scrollPosition < seccion2OffsetTop) {
+    cambiarImagen('multimedia/sobre_mi.png');
   } else if (scrollPosition >= seccion2OffsetTop && scrollPosition < seccion3OffsetTop) {
-    cambiarImagen('multimedia/skill.png');
+    cambiarImagen('multimedia/skillp.png');
   } else if (scrollPosition >= seccion3OffsetTop && scrollPosition < seccion4OffsetTop) {
     cambiarImagen('multimedia/meta.png');
   } else if (scrollPosition >= seccion4OffsetTop) {
@@ -190,5 +190,37 @@ function verificarPosicionScroll() {
 
 window.addEventListener('scroll', verificarPosicionScroll);
 verificarPosicionScroll();
+ 
 
+
+
+
+// Crear el botón de copiar
+const btnCopiar = document.createElement("button");
+btnCopiar.id = "btnCopiar";
+btnCopiar.innerHTML = '<i class="fa-regular fa-clipboard"></i>Copiar E-mail';
+
+// Obtener el contenedor y agregar el botón
+const btnCopiarContainer = document.getElementById("btnCopiarContainer");
+btnCopiarContainer.appendChild(btnCopiar);
+
+// Obtener referencia al botón copiar
+const btnCopiarElement = document.getElementById("btnCopiar");
+
+// Agregar evento click al botón
+btnCopiarElement.addEventListener("click", copiarTexto);
+
+function copiarTexto() {
+  const textoACopiar = "luchite05@gmail.com"; // Reemplaza con el texto que deseas copiar
+
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = textoACopiar;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+
+  // Cambiar el contenido del botón por un texto
+  btnCopiarElement.innerHTML = "Texto copiado";
+}
 

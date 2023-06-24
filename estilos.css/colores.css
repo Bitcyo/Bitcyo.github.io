@@ -128,9 +128,35 @@ filter:saturate(3);
 
 .contacto>i{
 font-size: 100px;
+justify-content: center;
+}
+
+#btnCopiar{
+  border-color: none;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
 }
 
 
+#btnCopiar:hover{
+
+  color:var(--tercer-color);
+}
+
+#cv{
+width: 100px;
+height: 100px;
+}
+.contain_CV{
+width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 
 .sony{
   display: flex;

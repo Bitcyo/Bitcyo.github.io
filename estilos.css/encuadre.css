@@ -437,6 +437,7 @@ transform: translateX(200px);
  
 .divs {
   width: 100%;
+
 }
 
 .grafico {
@@ -607,9 +608,11 @@ transform: translateX(200px);
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .contacto {
+justify-content: center;
   background-color: transparent;
   color: var(--segundo-color);
   border-color: transparent;
@@ -635,7 +638,7 @@ transform: translateX(200px);
   color: var(--segundo-color);
 }
 
-form {
+/*form {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -664,7 +667,9 @@ button[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
+}*/
+
+
 
 /* Estilos del footer */
 .footer {
