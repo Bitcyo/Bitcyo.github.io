@@ -178,9 +178,9 @@ function verificarPosicionScroll() {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollPosition >= seccion1OffsetTop && scrollPosition < seccion2OffsetTop) {
-    cambiarImagen('multimedia/sobre_mi.png');
+    cambiarImagen('multimedia/sobremi.png');
   } else if (scrollPosition >= seccion2OffsetTop && scrollPosition < seccion3OffsetTop) {
-    cambiarImagen('multimedia/skillp.png');
+    cambiarImagen('multimedia/skill.png');
   } else if (scrollPosition >= seccion3OffsetTop && scrollPosition < seccion4OffsetTop) {
     cambiarImagen('multimedia/meta.png');
   } else if (scrollPosition >= seccion4OffsetTop) {
