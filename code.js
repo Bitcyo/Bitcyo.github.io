@@ -221,6 +221,6 @@ function copiarTexto() {
   document.body.removeChild(elementoTemporal);
 
   // Cambiar el contenido del botón por un texto
-  btnCopiarElement.innerHTML = "Texto copiado";
+  btnCopiarElement.innerHTML = "E-mail copiado";
 }
 
