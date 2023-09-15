@@ -399,7 +399,7 @@ overflow: hidden;
 
 
 .subtittle {
-width: 100%;
+
 font-size: 40px;
 color: var(--tercer-color) ;
 }
@@ -409,7 +409,6 @@ color: var(--tercer-color) ;
   padding-top: 0;
   width: 80%;
   transition: .5s;
-  margin-bottom: 20px;
   text-indent: 20px; /* Ajusta el valor según el espacio deseado */
 
 
@@ -564,10 +563,9 @@ transform: translateX(200px);
     transform: translate(0, 0);
   }
 }
-
 #cuadro1 {
-  background-image: url(../multimedia/image-removebg-preview.png);
-  background-size: cover;
+  background-image: url(../multimedia/redes.png);
+    background-size: cover;
 }
 
 #cuadro2 {
@@ -592,8 +590,13 @@ transform: translateX(200px);
 
 #cuadro6 {
   background-image: url(../multimedia/Bash.png);
-  width: 290px;
+  width: 300px;
     background-size: cover;
+}
+
+#cuadro7 {
+  background-image: url(../multimedia/image-removebg-preview.png);
+  background-size: cover;
 }
 
 
