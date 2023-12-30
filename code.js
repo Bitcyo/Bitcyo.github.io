@@ -82,7 +82,7 @@ github.addEventListener('click', function() {
 });
 
 linkend.addEventListener('click', function() {
-  redireccion('https://www.linkedin.com/in/luis-angel-s%C3%A1nchez-j-46b914254/');
+  redireccion('https://www.linkedin.com/in/luis-sanchez-j');
 });
 
 
@@ -94,9 +94,9 @@ wsp.addEventListener('click', function() {
   window.location.href = 'https://wa.me/51955335798';
 });
  
-ig.addEventListener('click', function() {
-  window.location.href = 'https://www.instagram.com/luis_an_s28/';
-});
+//ig.addEventListener('click', function() {
+//  window.location.href = 'https://www.instagram.com/luis_an_s28/';
+//})
 
 const github2 = document.querySelector('.github2');
 const linkend2 = document.querySelector(`.linkend2`);
@@ -109,7 +109,7 @@ github2.addEventListener('click', function() {
 });
 
 linkend2.addEventListener('click', function() {
-  redireccion('https://www.linkedin.com/in/luis-angel-s%C3%A1nchez-j-46b914254/');
+  redireccion('https://www.linkedin.com/in/luis-sanchez-j');
 });
 
 mail2.addEventListener('click', function() {
@@ -120,9 +120,9 @@ wsp2.addEventListener('click', function() {
   window.location.href = 'https://wa.me/51955335798';
 });
  
-ig2.addEventListener('click', function() {
-  window.location.href = 'https://www.instagram.com/luis_an_s28/';
-});
+//ig2.addEventListener('click', function() {
+//  window.location.href = 'https://www.instagram.com/luis_an_s28/';
+//});
 
 
 
