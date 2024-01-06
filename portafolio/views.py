@@ -7,7 +7,7 @@ from django.conf import settings
 # Create your views here.
 
 def index(request):
-    archivo = models.FilePDF.objects.first()
+    archivo = models.FilePDF.objects.first() 
     file_name = archivo.file.name if archivo else ''
     skills = models.Skill.objects.all()
     interests = models.Interest.objects.all()
