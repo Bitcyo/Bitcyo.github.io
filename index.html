@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,11 +6,11 @@
   <meta name="author" content="Luis Sanchez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luis Sanchez J. Perfil profesional </title>
-<link rel="shortcut icon" href="portafolio/static/multimedia/un_gato_negro___1-removebg-preview.png">
+<link rel="shortcut icon" href="multimedia/un_gato_negro___1-removebg-preview.png">
 <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-<link rel="stylesheet" type="text/css" href="portafolio/static/estilos.css/colores.css">
-<link rel="stylesheet" type="text/css" href="portafolio/static/estilos.css/encuadre.css">
-<link rel="stylesheet" type="text/css" href="portafolio/static/estilos.css/responsive.css">
+<link rel="stylesheet" type="text/css" href="estilos.css/colores.css">
+<link rel="stylesheet" type="text/css" href="estilos.css/encuadre.css">
+<link rel="stylesheet" type="text/css" href="estilos.css/responsive.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@500&display=swap" rel="stylesheet">
@@ -37,7 +36,7 @@
       </ul>
     </nav>
       <h1  id="id-1">Luis Sanchez J.</h1>
-      <h2 id="id-2">Aspirante a especialista de CiberSeguridad</h2>
+      <h2 id="id-2">Aspirante a especialista de Ciberseguridad</h2>
       <div class="contactos2" >
 <!--        <button class="contacto2 ig2"><i class="fa-brands fa-instagram"></i></button>-->
         <button class="contacto2 wsp2"><i class="fa-brands fa-whatsapp"></i></button>
@@ -55,7 +54,7 @@
 <nav class="Menu">
 <h1>@luis Sanchez:</h1><h3>by~Bitcyo<h3>
 
-  
+
   <ul>
     <div class="Menu_li">
       <li><a href="#inicio"><i class="fa-solid fa-user"></i>Sobre mí</a></li>
@@ -71,7 +70,7 @@
       <li><a href="#contactos"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
     </div>
   </ul>
-<div class="retrato">                       
+<div class="retrato">
   <div class="dezliz" id="js"></div>
 </div>
 </nav>
@@ -134,44 +133,87 @@
 
 
 <main id="inicio">
-
-<h2 class="indice">¿Quién soy?</h2>
+<h2 class="indice presentacion">¿Quién soy?</h2>
+<div class="contenido presentacion">
   
-{% for section in presentations_sections %}
-  <h2 class="indice presentacion">{{ section.title }}</h2>
-  <div class="contenido presentacion">
-    <p>{{ section.content }}</p>
-  </div>
-{% endfor %}
-
-
+  <p>Hola, soy Luis Angel, apasionado de la tecnología y estoy encaminado a convertirme en un especialista en ciberseguridad.Estoy comprometido con mi desarrollo profesional en este campo en constante evolución.</p>
+</div>
+<div class="contenido presentacion">
+  <h2 class="subtittle">Autodidacta</h2>
+  <p>A lo largo de mi recorrido, he conocido el mundo de la progrmación. Esta forma de aprendizaje me ha permitido desarrollar habilidades independientes y demostrar mi capacidad para asumir nuevos desafíos y aprender de manera continua.</p>
+<!---- <p>Estoy decidido a seguir mejorando y fortaleciendo mis habilidades en el campo de la tecnología y la ciberseguridad para poder aplicarlos a mis proyectos.</p> -->
+</div>
+<div class="contenido presentacion">
+  <h2 class="subtittle">Mis Objetivos</h2>
+  <p>Busco oportunidades desafiantes que me permitan crecer y expandir mi experiencia en el ámbito de la ciberseguridad. Mi meta es convertirme en un profesional altamente competente y respetado en este campo, y contribuir a la protección de la información y los sistemas digitales contra amenazas y ataques cibernéticos.</p>
+</div>
 
 
 <div id="cuadros">
-    <h2 class="indice">Mis Habilidades</h2>
-    <div class="grafico-2"></div>
-    <div class="contenedor">
-        {% for skill in skills %}
-           <div class="cuadro" style="background-image: url('{{ skill.image.url }}'); " ,style="{% if skill.image_width %}width: {{ skill.image_width }}px;{% endif %}">
-                <div class="overlay">
-                    <h3>{{ skill.name }}</h3>
-                </div>
-            </div>
-        {% endfor %}
-
-        <h3 class="sub_indice">Intereses</h3>
-
-        {% for interest in interests %}
-            <div class="cuadro" style="background-image: url('{{ interest.image.url }}');" ,style="{% if skill.image_width %}width: {{ skill.image_width }}px;{% endif %}">
-                <div class="overlay">
-                    <h3>{{ interest.name }}</h3>
-                </div>
-            </div>
-        {% endfor %}
+                    <h2 class="indice">Conocimientos</h2>
+  <div class="grafico-2"></div>
+<div class="contenedor">
+  <div id="cuadro1" class="cuadro">
+    <div class="overlay">
+      <h3>Network</h3>
     </div>
-</div>
- 
+  </div>
+  <div id="cuadro2" class="cuadro">
+    <div class="overlay">
+      <h3>Linux</h3>
+    </div>
+  </div>
+  <div id="cuadro3" class="cuadro">
+    <div class="overlay">
+      <h3>Python</h3>
+    </div>
+  </div>
+  <div id="cuadro6" class="cuadro">
+    <div class="overlay">
+      <h3>Bash</h3>
+    </div>
+  </div>
+  <div id="cuadro7" class="cuadro">
+    <div class="overlay">
+      <h3>JavaScript<br>basic</h3>
+    </div>
+  </div>
 
+    <div id="cuadro4" class="cuadro">
+    <div class="overlay">
+      <h3>SQL</h3>
+    </div>
+  </div>
+
+    <div id="cuadro9" class="cuadro">
+    <div class="overlay">
+      <h3>Django</h3>
+    </div>
+  </div>
+
+<h3 class="sub_indice">Intereses</h3>
+
+
+  <div id="cuadro5" class="cuadro">
+    <div class="overlay">
+      <h3>IA</h3>
+    </div>
+  </div>
+
+  <div id="cuadro10" class="cuadro">
+    <div class="overlay">
+      <h3>Machin learning</h3>
+    </div>
+  </div>
+
+  <div id="cuadro11" class="cuadro">
+    <div class="overlay">
+      <h3>Blockchain</h3>
+    </div>
+  </div>
+</div>
+
+</div>
               
                               
 <div class="divs">
@@ -184,19 +226,13 @@
     </div>
     <div class="skill-value">80%</div>
   </div>
-  <div class="skills">
-    <div class="skill-name">Activo</div>
-    <div class="progress-bar">
-      <div class="progress" style="width: 90%;">  <div class="progress2"></div>  </div>
-    </div>
-    <div class="skill-value">90%</div>
-  </div>
+ 
   <div class="skills">
     <div class="skill-name">Comunicación</div>
     <div class="progress-bar">
       <div class="progress" style="width: 100%;"> <div class="progress2"></div></div>
     </div>
-    <div class="skill-value">100%</div>
+    <div class="skill-value">90%</div>
   </div>
   <div class="skills">
     <div class="skill-name">Resolución de problemas</div>
@@ -212,7 +248,17 @@
     </div>
     <div class="skill-value">100%</div>
   </div>
+ <div class="skills">
+    <div class="skill-name">Ética</div>
+    <div class="progress-bar">
+      <div class="progress" style="width: 100%;">  <div class="progress2"></div>  </div>
+    </div>
+    <div class="skill-value">90%</div>
+  </div>
+
 </div>
+
+
 </div>
 
 
@@ -237,7 +283,7 @@ LANZAMEEE tu gaaaaa
 <div class="divs">
                  <h2 class="indice" id="contactos"> Contacto </h2>
 <div class="contactos">
-<!--        <button class="contacto ig"><i class="fa-brands fa-instagram"></i>Instagram</button> -->
+        <button class="contacto ig"><i class="fa-brands fa-instagram"></i>Instagram</button>
         <button class="contacto wsp"><i class="fa-brands fa-whatsapp"></i>Whatsapp</button>
         <button class="contacto linkend"><i class="fa-brands fa-linkedin"></i>Linked-in</button>
         <button class="contacto github"><i class="fa-brands fa-github"></i>GitHub</button>
@@ -245,17 +291,13 @@ LANZAMEEE tu gaaaaa
         <span class="contacto"id="btnCopiarContainer"></span>
 
 
-<div class="contain_CV">
-    <a href="{{ MEDIA_URL }}{{ file_name }}" download="{{ file_name }}">
-        <img src="{% static 'multimedia/curriculum-vitae.png' %}" alt="Icono" class="contacto" id="cv">
-        Descargar CV
-    </a>
 </div>
+ <div class="contain_CV">
+    <a href="multimedia/Luis Angel Sanchez J. (2).pdf" download><img src="multimedia/curriculum-vitae.png" alt="Icono" class="contacto" id="cv">Descargar CV</a>
+ 
+ </div>
 
-
-
-<img class="sony" src="{% static 'multimedia/top_5_razones_para_vpmtratarme__3_-removebg-preview.png' %}">
-
+<img class="sony" src="multimedia/top_5_razones_para_vpmtratarme__3_-removebg-preview.png">
 
 </div>
   
@@ -290,12 +332,12 @@ LANZAMEEE tu gaaaaa
   <div class="container">
     <div class="footer__content">
       <div class="footer__logo">
-        <img src="static/multimedia/HZ (4).png" alt="Logo">
+        <img src="multimedia/HZ (4).png" alt="Logo">
       </div>
       <nav class="footer__menu">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#cuadros">Habilidades</a></li>
+          <li><a href="#cuadros">habilidades</a></li>
           <li><a href="#experiencias">Experiencia</a></li>
           <li><a href="#contactos">Contacto</a></li>
         </ul>
@@ -314,8 +356,7 @@ LANZAMEEE tu gaaaaa
 </footer>
 
 
-
-<script src="portafolio/static/code.js"></script>
+<script src="code.js"></script>
 </body>
 
 
