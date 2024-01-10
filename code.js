@@ -67,36 +67,47 @@ window.addEventListener('scroll', function() {
 // open window of networks//
 
 const redireccion = (url) => {
-  window.open(url);
+  window.open(url, '_blank');
 }
 
-
+// Select elements
 const github = document.querySelector('.github');
-const linkend = document.querySelector(`.linkend`);
-const mail = document.querySelector(`.mail`);
-const ig = document.querySelector(`.ig`)
+const linkend = document.querySelector('.linkend');
+const mail = document.querySelector('.mail');
+const ig = document.querySelector('.ig');
 const wsp = document.querySelector('.wsp');
 
-github.addEventListener('click', function() {
-  redireccion('https://github.com/Bitcyo');
-});
+// Check if the elements were found before adding event listeners
+if (github) {
+  github.addEventListener('click', function() {
+    redireccion('https://github.com/Bitcyo');
+  });
+}
 
-linkend.addEventListener('click', function() {
-  redireccion('https://www.linkedin.com/in/luis-sanchez-j');
-});
+if (linkend) {
+  linkend.addEventListener('click', function() {
+    redireccion('https://www.linkedin.com/in/luis-sanchez-j');
+  });
+}
 
+if (mail) {
+  mail.addEventListener('click', function() {
+    window.location.href = 'https://mail.google.com/mail/u/0/#sent?compose=new';
+  });
+}
 
-mail.addEventListener('click', function() {
-  window.location.href = 'https://mail.google.com/mail/u/0/#sent?compose=new';
-});
+if (wsp) {
+  wsp.addEventListener('click', function() {
+    window.location.href = 'https://wa.me/51917462301';
+  });
+}
 
-wsp.addEventListener('click', function() {
-  window.location.href = 'https://wa.me/51955335798';
-});
- 
-//ig.addEventListener('click', function() {
-//  window.location.href = 'https://www.instagram.com/luis_an_s28/';
-//})
+// Uncomment the following block if you want to use window.location.href for Instagram
+// if (ig) {
+//   ig.addEventListener('click', function() {
+//     window.location.href = 'https://www.instagram.com/luis_an_s28/';
+//   });
+// }
 
 const github2 = document.querySelector('.github2');
 const linkend2 = document.querySelector(`.linkend2`);
@@ -117,7 +128,7 @@ mail2.addEventListener('click', function() {
 });
 
 wsp2.addEventListener('click', function() {
-  window.location.href = 'https://wa.me/51955335798';
+  window.location.href = 'https://wa.me/51917462301';
 });
  
 //ig2.addEventListener('click', function() {
@@ -184,7 +195,7 @@ function verificarPosicionScroll() {
   } else if (scrollPosition >= seccion3OffsetTop && scrollPosition < seccion4OffsetTop) {
     cambiarImagen('multimedia/meta.png');
   } else if (scrollPosition >= seccion4OffsetTop) {
-    cambiarImagen('multimedia/contacto.png');
+    cambiarImagen(' multimedia/contacto.png');
   }
 }
 
