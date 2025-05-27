@@ -73,8 +73,8 @@ text-align: center;
   padding-top: 0;
   width: 100%;
   transition: .5s;
-  margin-top: 40px;
-  margin-bottom: 20px;
+ /* margin-top: 500px;
+  margin-bottom: 20px; */
 background-color:rgba(0, 0, 0, 0.7);
 text-align: right;
 }
@@ -92,7 +92,7 @@ transform: translateX(0px);
   width: 300px;
   transform: scale(1.2);
   margin: auto;
-  margin-bottom: 100px;
+ /* margin-bottom: 100px; */
   margin-top: 35px;
   font-size: 10px;
 }
@@ -224,7 +224,7 @@ background-color:rgb(15, 13, 13);
   }
 
 .sony{
-width: 60%;
+width: 40%;
 }
 
 }
