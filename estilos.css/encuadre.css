@@ -393,20 +393,19 @@ main{
 display:flex;
 flex-wrap: wrap;
 right: 0;
-width: 81%;
+width: 65%;
 overflow: hidden;
 }
 
 
 .subtittle {
 
-font-size: 40px;
+font-size: 35px;
 color: var(--tercer-color) ;
 }
 
 
  .contenido {
-  padding-top: 0;
   width: 80%;
   transition: .5s;
   text-indent: 20px; /* Ajusta el valor según el espacio deseado */
@@ -443,7 +442,7 @@ transform: translateX(200px);
   width: 600px;
   transform: scale(1.2);
   margin: auto;
-  margin-bottom: 200px;
+  margin-bottom: 70px;
   margin-top: 70px;
 }
 
